@@ -1,0 +1,409 @@
+/* Hero / Landing */
+.hero-section {
+  background-image: url('../public/photo-1632425422799-286dc4325dbb.avif');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  
+  /* ✅ force full width */
+  overflow: hidden;
+  /* ✅ remove side scroll */
+
+}
+
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.explore-btn {
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: linear-gradient(to right, #e040fb, #7c4dff);
+}
+
+/* Events section */
+.event-section {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.event-section h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.event-card {
+  background: rgba(255, 255, 255, 0.08); /* transparent white */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-image {
+  width: 100%;
+  height: 498px;
+  object-fit: cover;
+}
+
+.event-card h2 {
+  margin: 16px;
+  font-size: 20px;
+  color: #333;
+}
+
+.event-card p {
+  margin: 0 16px 12px;
+  color: #f9f0f0;
+  font-size: 14px;
+}
+
+.book-btn {
+  margin: 0 16px 20px;
+  padding: 10px;
+  background: rgb(255 247 247);
+  
+  border: none;
+  border-radius: 6px;
+  width: calc(100% - 32px);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background: #657fce;
+}
+
+.book-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.event-section {
+  background-color: #262424;  /* soft peach-like background */
+  padding: 50px 20px;
+  background-image: url(../public/dj.avif);
+}
+
+.event-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #e0d2d2;
+}
+body {
+  background-color: #5fb0e9; /* light gray, you can change to #1c1c1c for dark */
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+.footer {
+  background-color: #3393d8; /* or whatever you're using */
+  color: #ccc;
+  padding: 20px 0;
+  text-align: center;
+}
+.overlay h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+.form{
+  max-width: 10%;
+}
+.hero-navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3); /* semi-transparent bg */
+}
+
+.hero-navbar li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.hero-navbar li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.hero-navbar li a:hover {
+  background-color: hwb(214 82% 15% / 0.2);
+  border-radius: 5px;
+}
+/* styles.css or Navbar.css */
+.navbar {
+  background-color: #2563eb; /* Blue */
+  padding: 1rem;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.booking-form {
+  background-color: #4d7884;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.booking-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.booking-form input::placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+.booking-form button {
+  padding: 10px 15px;
+  background-color: #212b35;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.booking-form button:hover {
+  background-color: #0056b3;
+}
+
+.booking-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+.movies-section {
+  padding: 20px;
+}
+
+.movies-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.movies-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+.movies-card:hover {
+  transform: scale(1.05);
+}
+
+.movies-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.movies-content {
+  padding: 15px;
+}
+
+.book-btn {
+  background-color: #8b27c9;
+  color: rgb(235, 63, 16);
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+.book-btn:hover {
+  background-color: #0056b3;
+}
+.event-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+.booking-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 20px;
+}
+.movies-section {
+  background-image: url('https://img.freepik.com/free-photo/view-3d-cup-cinema-popcorn_23-2150866085.jpg?ga=GA1.1.2086723759.1714556429&w=740'); /* 🔁 Replace with your desired image path */
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  color: white; /* Optional: improve text visibility */
+}
+
+.footer{
+  background-color: bla;
+}
+.hero-section-split {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #111; /* Optional: dark background */
+  color: white;
+  padding: 0 5%;
+  gap: 40px;
+  flex-wrap: wrap; /* responsive */
+}
+
+.spline-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  height: 500px;
+}
+
+.spline-container canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.hero-section-split {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* left aligned */
+  height: 100vh; /* full viewport height */
+  padding: 0 5%;
+  gap: 40px; /* space between text and spline */
+  background-image: url('../public/photo-1632425422799-286dc4325dbb.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  color: white;
+}
+
+.overlay.left-align {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.5); /* keep your overlay effect */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.spline-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  height: 500px;
+
+}
+
+.spline-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain;
+}
+
+/* Responsive - stack vertically on small screens */
+@media (max-width: 768px) {
+  .hero-section-split {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+
+}
